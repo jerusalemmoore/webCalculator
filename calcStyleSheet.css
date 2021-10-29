@@ -1,0 +1,87 @@
+body {
+  display: flex;
+  justify-content:center;
+  flex-direction: column;
+  align-items: center;
+  background-color: lightblue;
+}
+
+#headerContainer {
+  display: flex;
+  justify-content: center;
+}
+#calcContainer{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: grey;
+  flex-basis: auto;
+  border: outset ;
+  border-radius: 25px;
+  width: auto;
+  padding: 30px;
+  /* height: 400px; */
+}
+#entryWindow{
+  /* padding: 30px; */
+  margin: 20px;
+  background-color: white;
+  display: flex;
+  /* height: 20px; */
+  width: 100%;
+  /* flex-direction: row-reverse; */
+  justify-content: flex-end;
+  border: inset;
+
+
+}
+/* grid to hold */
+#buttonsContainer{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 40px;
+
+}
+#operationsContainer{
+  display:grid;
+  grid-template-columns: auto;
+  grid-row-gap: 30px;
+}
+#digitsContainer{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 40px;
+  grid-row-gap: 30px;
+
+
+}
+ .digitButton{
+   font-weight: bold;
+   border: groove;
+   text-align: center;
+   height: 50px;
+   width: 50px;
+   /* grid-column-start: 1;
+   grid-column-end: 3; */
+   /* grid-row-start: 1;
+   grid-row-end:3; */
+
+   /* display:flex; */
+   /* justify-content: */
+ }
+ .opButton{
+   font-weight: bold;
+   border: groove;
+   text-align: center;
+   height: 50px;
+   width: 50px;
+ }
+ /* special digit button ids to deal with positioning in digit buttons grid */
+ #zeroButton{
+   grid-column-start: 2;
+ }
+ #decimalButton {
+   grid-column-start: 3;
+ }
