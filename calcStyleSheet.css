@@ -37,17 +37,24 @@ body {
 
 
 }
-/* grid to hold */
+/* grid to hold each grid container of buttons */
+/* column 1 is the digits grid of digit buttons */
+/* column 2 is a grid of operation buttons */
 #buttonsContainer{
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto auto auto;
   grid-column-gap: 40px;
 
 }
+/* container to hold buttons for operations */
+/* column 1 should have +,-,/,+ */
 #operationsContainer{
   display:grid;
-  grid-template-columns: auto;
+  grid-template-columns: auto ;
+  grid-row: auto auto auto auto;
+  /* grid-template-rows: 4; */
   grid-row-gap: 30px;
+  grid-column-gap: 40px;
 }
 #digitsContainer{
   display: grid;
@@ -84,4 +91,12 @@ body {
  }
  #decimalButton {
    grid-column-start: 3;
+ }
+ #negateButton {
+   grid-column-start: 1;
+ }
+ #evalButton{
+   grid-row-start: 3;
+   /* grid-row-end: 4; */
+   height: 135px ;
  }

@@ -11,41 +11,44 @@
 </container>
 <container id="calcContainer">
   <container id="entryWindow">
-    <h3>
-hello
+    <h3 id="windowVal">
+      0
 </h3>
   </container>
   <container id="buttonsContainer">
   <!-- Grid container organizes digits and decimal buttons -->
   <container id="digitsContainer">
-    <button class="digitButton">
+    <button class="digitButton" onclick="addToEntry(1)">
       1
     </button>
-    <button class="digitButton">
+    <button class="digitButton" onclick="addToEntry(2)">
       2
     </button>
-    <button class="digitButton">
+    <button class="digitButton" onclick="addToEntry(3)">
       3
     </button>
-    <button class="digitButton">
+    <button class="digitButton" onclick="addToEntry(4)">
       4
     </button>
-    <button class="digitButton">
+    <button class="digitButton" onclick="addToEntry(5)">
       5
     </button>
-    <button class="digitButton">
+    <button class="digitButton" onclick="addToEntry(6)">
       6
     </button>
-    <button class="digitButton">
+    <button class="digitButton" onclick="addToEntry(7)">
       7
     </button>
-    <button class="digitButton">
+    <button class="digitButton" onclick="addToEntry(8)">
       8
     </button>
-    <button class="digitButton">
+    <button class="digitButton" onclick="addToEntry(9)">
       9
     </button>
-    <button class = "digitButton" id="zeroButton">
+    <button class="digitButton" id="negateButton">
+      +/-
+    </button>
+    <button class = "digitButton" id="zeroButton" onclick="addToEntry(0)">
       0
     </button>
     <button class = "digitButton" id="decimalButton">
@@ -66,7 +69,21 @@ hello
       +
     </button>
   </container>
+  <container id="operationsContainer">
+    <button class="opButton">
+      C
+    </button>
+    <!-- spacer for placing eal button -->
+    <div class="opButton" style="opacity: 0.0;">
+    </div>
+    <button class="opButton" id="evalButton">
+      =
+    </button>
+
+  </container>
 </container>
 </container>
+<script src="calculatorScript.js"></script>
+
 </body>
 </html>
