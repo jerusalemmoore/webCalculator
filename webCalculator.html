@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
@@ -45,7 +44,7 @@
     <button class="digitButton" onclick="addToEntry(9)">
       9
     </button>
-    <button class="digitButton" id="negateButton">
+    <button class="digitButton" id="negateButton" onclick="negate()">
       +/-
     </button>
     <button class = "digitButton" id="zeroButton" onclick="addToEntry(0)">
@@ -56,16 +55,16 @@
     </button>
   </container>
   <container id="operationsContainer">
-    <button class="opButton">
+    <button class="opButton" onclick="operation('/')">
       /
     </button>
-    <button class="opButton">
+    <button class="opButton" onclick="operation('*')">
       *
     </button>
-    <button class="opButton">
+    <button class="opButton" onclick="operation('-')">
       -
     </button>
-    <button class="opButton">
+    <button class="opButton" onclick="operation('+')">
       +
     </button>
   </container>
@@ -76,7 +75,7 @@
     <!-- spacer for placing eal button -->
     <div class="opButton" style="opacity: 0.0;">
     </div>
-    <button class="opButton" id="evalButton">
+    <button class="opButton" id="evalButton" onclick="eval()">
       =
     </button>
 

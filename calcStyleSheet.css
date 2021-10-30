@@ -78,6 +78,10 @@ body {
    /* display:flex; */
    /* justify-content: */
  }
+ .digitButton:active {
+  background: #cecece;
+  text-decoration: none;
+}
  .opButton{
    font-weight: bold;
    border: groove;
@@ -85,6 +89,10 @@ body {
    height: 50px;
    width: 50px;
  }
+ .opButton:active {
+  background: #cecece;
+  text-decoration: none;
+}
  /* special digit button ids to deal with positioning in digit buttons grid */
  #zeroButton{
    grid-column-start: 2;
